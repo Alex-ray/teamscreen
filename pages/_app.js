@@ -11,7 +11,7 @@ export default function MyApp({ Component, pageProps }) {
   }, []);
 
   return (
-    <div className="bg-primary">
+    <div className="bg-gray-100 min-height-vh">
       <UserContextProvider>
         <Layout>
           <Component {...pageProps} />

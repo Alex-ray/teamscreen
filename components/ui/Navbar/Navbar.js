@@ -7,7 +7,7 @@ const Navbar = () => {
   const { user, signOut } = useUser();
 
   return (
-    <nav className={s.root}>
+    <nav>
       <a href="#skip" className="sr-only focus:not-sr-only">
         Skip to content
       </a>

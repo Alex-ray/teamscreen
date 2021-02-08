@@ -25,7 +25,8 @@
     "postcss": "^8.2.4",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^6.7.0",
-    "prettier": "^2.2.1"
+    "prettier": "^2.2.1",
+    "tailwindcss-neumorphism": "^0.1.0"
   },
   "prettier": {
     "arrowParens": "always",

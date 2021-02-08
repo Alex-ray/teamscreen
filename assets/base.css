@@ -1,16 +1,21 @@
 :root {
-  --primary: #000000;
+  /* --primary: #ECF0F3; */
+  --bg: rgba(245, 245, 245, 1);
+
+  --white: #fff;
+  --primary: #fff;
   --primary-2: #111;
-  --secondary: #ffffff;
+  --secondary: #2360EB;
   --secondary-2: #f1f3f5;
   --hover: rgba(255, 255, 255, 0.075);
   --hover-1: rgba(255, 255, 255, 0.15);
   --hover-2: rgba(255, 255, 255, 0.25);
   --selection: var(--purple);
 
-  --text-base: white;
-  --text-primary: white;
+  --text-base: #2360EB;
+  --text-primary: #2360EB;
   --text-secondary: black;
+
 
   --accents-0: #212529;
   --accents-1: #343a40;
@@ -43,7 +48,7 @@
 }
 
 *:focus {
-  @apply outline-none ring-2 ring-pink ring-opacity-50;
+  @apply outline-none ring-2 ring-opacity-50;
 }
 
 html {
@@ -62,7 +67,7 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--primary-2);
+  background-color: var(--bg);
   color: var(--text-primary);
 }
 
@@ -74,6 +79,22 @@ body {
 
 a {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.bg-gradient-primary {
+  background-image: linear-gradient(-180deg, #26CBFF 0%, #2711FF 100%);
+}
+
+#__next, .min-height-vh {
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+}
+
+.flex-expand-height {
+  display: flex;
+  flex-grow: 1;
+  flex-flow: column;
 }
 
 .animated {

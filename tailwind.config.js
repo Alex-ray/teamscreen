@@ -1,11 +1,23 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+  plugins: [require('tailwindcss-neumorphism')],
   theme: {
     extend: {
       maxWidth: {
         '8xl': '1920px'
       },
       colors: {
+        black: colors.black,
+        white: colors.white,
+        gray: colors.trueGray,
+        indigo: colors.indigo,
+        red: colors.rose,
+        yellow: colors.amber,
+        cyan: colors.cyan,
+        lightBlue: colors.lightBlue,
+
         primary: 'var(--primary)',
         'primary-2': 'var(--primary-2)',
         secondary: 'var(--secondary)',
@@ -23,23 +35,19 @@ module.exports = {
         'accents-7': 'var(--accents-7)',
         'accents-8': 'var(--accents-8)',
         'accents-9': 'var(--accents-9)',
-        violet: 'var(--violet)',
-        'violet-light': 'var(--violet-light)',
-        pink: 'var(--pink)',
-        cyan: 'var(--cyan)',
-        blue: 'var(--blue)',
-        green: 'var(--green)',
-        red: 'var(--red)'
+        // violet: 'var(--violet)',
+        // 'violet-light': 'var(--violet-light)',
+        // pink: 'var(--pink)',
+        // cyan: 'var(--cyan)',
+        // blue: 'var(--blue)',
+        // green: 'var(--green)',
+        // red: 'var(--red)'
       },
       textColor: {
         base: 'var(--text-base)',
         primary: 'var(--text-primary)',
-        secondary: 'var(--text-secondary)'
-      },
-      boxShadow: {
-        'outline-2': '0 0 0 2px var(--accents-2)',
-        magical:
-          'rgba(0, 0, 0, 0.02) 0px 30px 30px, rgba(0, 0, 0, 0.03) 0px 0px 8px, rgba(0, 0, 0, 0.05) 0px 1px 0px'
+        secondary: 'var(--text-secondary)',
+        white: `var(--white)`
       },
       lineHeight: {
         'extra-loose': '2.2'
