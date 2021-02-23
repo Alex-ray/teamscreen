@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import Navbar from './ui/Navbar';
+import Navbar from './ui/Marketing/Navbar';
 import Footer from './ui/Footer';
 
 export default function Layout({ children, meta: pageMeta }) {
@@ -37,7 +37,6 @@ export default function Layout({ children, meta: pageMeta }) {
         <meta name="twitter:description" content={meta.description} />
         <meta name="twitter:image" content={meta.cardImage} />
       </Head>
-      <Navbar />
       <div id="skip" className="flex-expand-height">{children}</div>
       <Footer />
     </>

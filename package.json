@@ -22,6 +22,7 @@
     "tailwindcss": "^2.0.2"
   },
   "devDependencies": {
+    "@tailwindcss/forms": "^0.2.1",
     "postcss": "^8.2.4",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^6.7.0",

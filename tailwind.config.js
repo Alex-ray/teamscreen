@@ -2,7 +2,7 @@ const colors = require('tailwindcss/colors')
 
 module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-  plugins: [require('tailwindcss-neumorphism')],
+  plugins: [require('tailwindcss-neumorphism'), require('@tailwindcss/forms')],
   theme: {
     extend: {
       maxWidth: {
@@ -17,6 +17,7 @@ module.exports = {
         yellow: colors.amber,
         cyan: colors.cyan,
         lightBlue: colors.lightBlue,
+        blueGray: colors.blueGray,
 
         primary: 'var(--primary)',
         'primary-2': 'var(--primary-2)',
